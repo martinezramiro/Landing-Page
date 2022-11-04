@@ -34,6 +34,11 @@ header {
     
 }
 
+.navbar {
+    display: flex;
+    gap: 100px;
+}
+
 .navbar-list {
     display: flex;
     gap: 20px;
@@ -50,7 +55,31 @@ header {
 
 }
 
+.navbar-list a:hover {
+    border-bottom: 1px solid white;
+  }
+
 .navbar-list li:first-child {
     font-weight: 700;
 }
 
+.cart-icon {
+    height: 60px;
+    border: 2px solid var(--text-white);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-right: 1rem;
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--primary);
+    margin-top: 100px;
+  }
+ 
