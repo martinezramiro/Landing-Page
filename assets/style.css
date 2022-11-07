@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --background: #ff780a;
+    --background: #c9ad11;
     --primary: #121314;
     --secondary: darkgray;
     --text-white: #f3f4f6;
-    --text-orange: #ff780a;
+    --text-orange: #c9ad11;
 }
 
 * {
@@ -18,7 +18,8 @@
 }
 
 header {
-    background: var(--primary);
+    background-image: url(./img/tapesWall.jpg);
+    background-size: contain;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -30,7 +31,7 @@ header {
 }
 
 .logo {
-    height: 100%;
+    height: 75%;
     
 }
 
