@@ -82,9 +82,10 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: var(--primary);
+    background-image: linear-gradient(to right, #353535 0%, black 100%);
     margin-top: 100px;
     font-family: "Poppins";
+
   }
  
 #hero {
@@ -95,6 +96,7 @@ main {
     padding: 20px;
     margin-top: 10px;
     flex-wrap: wrap;
+   
 }
 
 .hero-info {
@@ -104,13 +106,14 @@ main {
     padding: 20px;
     gap: 30px;
     width: 50%;
+    height: 100%;
  }
 
 .hero-info h1 {
     color: var(--text-orange);
-    font-size: 32px;
+    font-size: 38px;
     font-family: "Poppins";
-}
+ }
 .hero-info p {
     color: var(--text-white);
     font-family: "Poppins";
@@ -139,7 +142,9 @@ main {
 .hero-img {
     display: flex;
     width: 50%;
-    height: 450px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
 }
 .imagen {
     border-radius: 1rem;
