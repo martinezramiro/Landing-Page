@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
     <title>Landing Page</title>
   </head>
   <body>
@@ -15,17 +16,115 @@
         class="logo"
       />
       <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img
+            src="./assets/img/logo-menu.png"
+            alt="logo de menu"
+            class="label-img"
+          />
+        </label>
+        <input id="menu-toggle" type="checkbox" />
         <ul class="navbar-list">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Productos</a></li>
           <li><a href="#">Clientes</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
-        <img
-          src="./assets/img/cart-white.png"
-          alt="Carrito de compras"
-          class="cart-icon"
-        />
+        <label for="cart-toggle" class="cart-label">
+          <img
+            src="./assets/img/cart-white.png"
+            alt="Carrito de compras"
+            class="cart-icon"
+          />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+
+        <div class="cart">
+          <h2>Tus productos</h2>
+          <div class="cart-item">
+            <img src="./assets/img/carrito/mesa1.png" alt="Mesa del carrito" />
+            <div class="item-info">
+              <h3 class="item-title">Mesa</h3>
+              <p class="item-bid">Current Bid</p>
+              <span class="item-price">$12.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/carrito/silla1.jpg"
+              alt="Silla del carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Silla</h3>
+              <p class="item-bid">Current Bid</p>
+              <span class="item-price">$12.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/carrito/silla2.webp"
+              alt="Silla 2 del carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Silla 2</h3>
+              <p class="item-bid">Current Bid</p>
+              <span class="item-price">$12.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/carrito/sillon1.jpg"
+              alt="Sillon del carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Sillón</h3>
+              <p class="item-bid">Current Bid</p>
+              <span class="item-price">$12.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/carrito/barra1.jpg"
+              alt="Barra del carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Barra</h3>
+              <p class="item-bid">Current Bid</p>
+              <span class="item-price">$12.000</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>$25.000</span>
+          </div>
+          <button class="btn-add">Comprar</button>
+        </div>
       </nav>
     </header>
 
