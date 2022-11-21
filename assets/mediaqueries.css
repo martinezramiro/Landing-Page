@@ -1,4 +1,4 @@
-@media (max-width: 992px) /*hasta 768*/ {
+@media (max-width: 992px) /*hasta 768px*/ {
     .navbar {
         gap: 10px;
     }
@@ -11,13 +11,14 @@
     }
 }
 
-@media (max-width: 768px) /*hasta 576*/ {
+@media (max-width: 768px) /*hasta 576px*/ {
     #hero {
         flex-direction: column;
     }
     .hero-info {
         text-align: center;
-        align-items: center;        
+        align-items: center;
+        width: 90%;        
     }
     .hero-info h1 {
         font-size: 28px;
@@ -59,3 +60,22 @@
         display: flex;
     }
 }
+
+@media (max-width: 576px) /*hasta 320px*/ {
+    .cart {
+        left: 0;
+        width: 100%;
+        border: none;
+    }
+    .cart-item {
+        flex-wrap: wrap;
+    }
+    .hero-info h1 {
+        font-size: 19px;
+    }
+    .hero-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+} 

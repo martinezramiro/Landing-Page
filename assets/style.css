@@ -97,7 +97,7 @@ header {
     height: calc(100vh - 100px);
     overflow-y: scroll;
     z-index: 2;
-    /*display: none;*/
+    display: none;
 }
 .cart::-webkit-scrollbar {
     display: none;
@@ -107,6 +107,7 @@ header {
     font-size: 20px;
     font-weight: 500;
     font-family: "Poppins";
+    font-style: italic;
 }
 .cart-item {
     display: flex;
@@ -120,7 +121,7 @@ header {
 }
 .cart-item img {
     height: 70px;
-    /*width: 70px;*/
+    
 }
 .item-info {
     display: flex;
@@ -188,6 +189,25 @@ header {
     font-weight: 800;
     font-size: 19px;
 }
+.btn-add {
+    background: var(--text-white);
+    border: 2px solid var(--text-orange);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding: 6px;
+    cursor: pointer;
+}
+.btn-add:hover {
+    background: var(--text-orange);
+}
+#cart-toggle:checked + .cart {
+    display: flex;
+}
 
 
 main {
@@ -227,6 +247,7 @@ main {
     color: var(--text-orange);
     font-size: 38px;
     font-family: "Poppins";
+    text-shadow: 2px 2px 2px var(--primary);
  }
 .hero-info p {
     color: var(--text-white);
@@ -280,7 +301,7 @@ main {
 }
 .text-info-user {
     display: flex;
-    width: 60%;
+    width: 80%;
     font-family: "Montserrat";
     padding: 15px;
     font-weight: 500;
@@ -288,4 +309,154 @@ main {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/metal2.jpg);
+    margin-top: 35px;
+    text-align: center;
+}
+.card-info img {
+    width: 90px;
+    height: 50px;
+}
+.cards-head {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cards-head h2 {
+    font-family: "Poppins";
+    color: black;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px var(--text-orange);
+       
+}
+.cards-head p {
+    width: 80%;
+    font-family: "Poppins";
+    color: black;
+    text-shadow: 1px 1px 1px var(--secondary);
+    font-size: 20px;
+    font-weight: 700;
+}
+.cards-cards {
+    display: flex;
+    padding: 30px;
+    gap: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    background: var(--secondary);
+    height: 250px;
+    width: 250px;
+    border-radius: 1rem;
+}
+.card-info img {
+    height: 50px;
+    width: 50px;
+}
+.card-info h3{
+    font-family: "Montserrat";
+    color: var(--text-orange);
+    font-weight: 700;
+    text-shadow: 1px 1px 1px var(--primary);
+}
+.card-info p {
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 500;
+}
+#contact {
+    display: flex;
+    width: 80%;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    color: #f3f4f6;
+    padding: 5px;
+    flex-wrap: wrap;
+    gap: 40px;
+           
+}
+.contact-info {
+    
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.contact-info h2{
+    font-family: "Poppins";
+    padding: 10px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
+}
+.contact-info-datos h4 {
+    font-family: "Montserrat";
+    padding: 10px;
+}
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    
+}
+.contact-list li {
+    font-family: "Montserrat";
+    font-size: 13px;
+}
+.contact-list img {
+    width: 20px;
+}
+.redes {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.redes img {
+    width: 30px;
+}
+.iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iframe-cuadro {
+    border-radius: 1rem;
+}
+
+#footer {
+    background-image: linear-gradient(to right, #353535 0%, black 100%);
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 15px;
+    font-family: "Poppins";
+    color: var(--secondary);
+    text-shadow: 2px 2px 2px black;
+}
+.footer-img {
+    height: 75px;
 }
