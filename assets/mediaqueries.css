@@ -40,7 +40,18 @@
         gap: 20px;
         z-index: 2;
         display: none;
+        animation-name: desplegar-updown;
+        animation-duration: 1s;
     }
+    @keyframes desplegar-updown {
+        0% {
+       transform: translateY(-250px);
+       }
+        100% {
+       transform: translateY(0px);
+       }
+   }
+
     .navbar-list a {
         font-size: 15px;
     }

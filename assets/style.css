@@ -45,7 +45,6 @@ header {
     justify-content: center;
     align-items: center;
     padding-right: 50px;
-
 }
 
 .navbar-list a {
@@ -78,6 +77,7 @@ header {
     background-color: var(--text-orange);
     border-radius: 10px;
 }
+
 #menu-toggle,
 #cart-toggle,
 .menu-label {
@@ -98,6 +98,14 @@ header {
     overflow-y: scroll;
     z-index: 2;
     display: none;
+    animation-name: desplegar-derizq;
+    animation-duration: 1s;
+}
+@keyframes desplegar-derizq {
+    0% {
+        transform: translateX(calc(100vh - 100px));
+    }
+    100% {transform: translateX(0px);}
 }
 .cart::-webkit-scrollbar {
     display: none;
@@ -325,6 +333,10 @@ main {
     width: 90px;
     height: 50px;
 }
+.card-info img:hover {
+    animation-name: rotacionY;
+    animation-duration: 0.3s;
+}
 .cards-head {
     display: flex;
     flex-direction: column;
@@ -461,4 +473,14 @@ main {
 }
 .footer-img {
     height: 75px;
+    animation-name: rotacionY;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotacionY {
+    0% {transform: rotateY(0deg);
+    }
+    100% {transform: rotateY(360deg);
+    }
 }
