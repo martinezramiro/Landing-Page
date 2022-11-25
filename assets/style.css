@@ -76,6 +76,7 @@ header {
 .cart-icon:hover{
     background-color: var(--text-orange);
     border-radius: 10px;
+    border: 2px solid var(--text-orange);
 }
 
 #menu-toggle,
@@ -129,7 +130,9 @@ header {
 }
 .cart-item img {
     height: 70px;
-    
+}
+.silla {
+    padding: 0px 16px;        
 }
 .item-info {
     display: flex;
@@ -227,8 +230,7 @@ main {
     background-image: linear-gradient(to right, #353535 0%, black 100%);
     margin-top: 100px;
     font-family: "Poppins";
-
-  }
+}
  
 #hero {
     display: flex;
