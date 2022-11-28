@@ -28,6 +28,7 @@ header {
     padding: 0px 30px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -91,7 +92,7 @@ header {
     right: 0;
     padding: 50px 30px;
     background: linear-gradient(to right, black 0%, #353535 100%);
-    border-left: 1px solid var(--text-orange);
+    border-left: 2px solid var(--text-orange);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -108,6 +109,7 @@ header {
     }
     100% {transform: translateX(0px);}
 }
+
 .cart::-webkit-scrollbar {
     display: none;
 }
@@ -251,14 +253,14 @@ main {
     gap: 30px;
     width: 50%;
     height: 100%;
- }
+}
 
 .hero-info h1 {
     color: var(--text-orange);
-    font-size: 38px;
+    font-size: 40px;
     font-family: "Poppins";
-    text-shadow: 2px 2px 2px var(--primary);
- }
+    text-shadow: 6px 6px 4px black;
+}
 .hero-info p {
     color: var(--text-white);
     font-family: "Poppins";
