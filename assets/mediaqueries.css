@@ -9,6 +9,9 @@
     .hero-img img{
         height: 370px;
     }
+    .hero-info h1 {
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 768px) /*hasta 576px*/ {
@@ -82,7 +85,7 @@
         flex-wrap: wrap;
     }
     .hero-info h1 {
-        font-size: 19px;
+        font-size: 25px;
     }
     .hero-img img {
         width: 250px;
@@ -93,6 +96,22 @@
     }
     .cards-head p {
         font-size: 18px;
+    }
+    #contact {
+        
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-info {
+        width: 100%;
+        align-items: center;
+    }
+    iframe {
+        width: 300px;
+        height: 300px;
+        width: 80%;
     }
 
 } 
