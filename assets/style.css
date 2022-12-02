@@ -28,7 +28,7 @@ header {
     padding: 0px 30px;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 .logo {
@@ -75,12 +75,14 @@ header {
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease-out;
 }
 .cart-icon:hover{
     background-color: var(--text-orange);
     border-radius: 10px;
     border: 2px solid var(--text-orange);
     color: var(--primary);
+    transition: all 0.2s ease-in;
 }
 
 #menu-toggle,
@@ -102,15 +104,8 @@ header {
     height: calc(100vh - 100px);
     overflow-y: scroll;
     z-index: 2;
-    display: none;
-    animation-name: desplegar-derizq;
-    animation-duration: 1s;
-}
-@keyframes desplegar-derizq {
-    0% {
-        transform: translateX(calc(100vh - 100px));
-    }
-    100% {transform: translateX(0px);}
+    transform: translateX(200%);
+    transition: all 0.5s ease-in-out;
 }
 
 .cart::-webkit-scrollbar {
@@ -177,9 +172,11 @@ header {
     border-radius: 6px;
     border: 1px solid var(--text-orange);
     cursor: pointer;
+    transition: all 0.2s ease-in;
 }
 .quantity-handler:hover {
     background: var(--text-orange);
+    transition: all 0.2s ease-out;
 }
 .item-quantity {
     color: #121314;
@@ -217,12 +214,15 @@ header {
     font-family: "Montserrat";
     padding: 6px;
     cursor: pointer;
+    transition: all 0.2s ease-in;
 }
 .btn-add:hover {
     background: var(--text-orange);
+    transition: all 0.2s ease-out;
 }
 #cart-toggle:checked + .cart {
-    display: flex;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -282,6 +282,7 @@ main {
     background-color: var(--secondary);
     cursor: pointer;
     width: 105px;
+    transition: all 0.2s ease-in;
 }
  .boton a {
     font-family: "Montserrat";
@@ -290,6 +291,7 @@ main {
  .boton:hover {
     background: var(--text-orange);
     border-color: var(--text-white);
+    transition: all 0.2s ease-out;
 }
 
 .hero-img {
@@ -455,6 +457,11 @@ main {
 }
 .redes img {
     width: 30px;
+    transition: all 0.2s linear;
+}
+.redes img:hover {
+    transform: scale(1.2);
+    transition: all 0.2s linear;
 }
 iframe {
     display: flex;

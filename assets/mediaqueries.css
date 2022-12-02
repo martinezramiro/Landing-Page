@@ -42,19 +42,12 @@
         padding: 30px;
         gap: 20px;
         z-index: 2;
-        display: none;
-        animation-name: desplegar-updown;
-        animation-duration: 1s;
-    }
-    @keyframes desplegar-updown {
-        0% {
-       transform: translateY(-250px);
-       }
-        100% {
-       transform: translateY(0px);
-       }
-   }
+        /*display: none;*/
+        transform: translateY(-200%);
+        transition: all 0.5s ease-in-out;
+        }
 
+ 
     .navbar-list a {
         font-size: 15px;
     }
@@ -64,14 +57,16 @@
         cursor: pointer;
         height: 35px;
         align-self: center;
-        
+        transition: all 0.2s ease-in;
     }
     .menu-label:hover {
         background-color: var(--text-orange);
         border-radius: 3px;
+        transition: all 0.2s ease-out;
     }
     #menu-toggle:checked + .navbar-list {
-        display: flex;
+        transform: translateY(0%);
+        transition: all 0.5s ease-in-out;
     }
 }
 

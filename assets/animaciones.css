@@ -41,3 +41,58 @@ html {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide-up {
+    from {
+        transform: translateY(150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes slide-left {
+    from {
+        transform: translateX(150px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-down {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.hero-info h1 {
+    animation: fade 1s ease-in,
+    slide-down 1.5s ease-in-out;
+}
+.hero-info p {
+    animation: fade 1s ease-in,
+    slide-left 1.5s ease-in-out;
+}
+.boton {
+    animation: fade 1s ease-in,
+    slide-up 1.5s ease-in-out;
+}
+.imagen {
+    opacity: 0;
+    animation: fade 2s ease-in-out forwards;
+    animation-delay: 0.7s;
+}
+header {
+    animation: fade 1s ease-in,
+    slide-down 1s ease-in-out;
+}
